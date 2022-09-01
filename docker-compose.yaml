@@ -1,0 +1,11 @@
+version: "3"
+services:
+  website: 
+    image: test_image_webservice
+    ports:
+      - "8080:80"
+  mongodb:
+    image: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=AzureDiamond
+      - MONGO_INITDB_ROOT_PASSWORD=idontcaredoyou
