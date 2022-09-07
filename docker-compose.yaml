@@ -1,10 +1,10 @@
 version: "3"
 services:
-  website: 
-    image: test_image_webservice
+  webservice: 
+    image: development_flask
     ports:
       - "8080:80"
-  mongodb:
+  database:
     image: mongo
     environment:
       - MONGO_INITDB_ROOT_USERNAME=AzureDiamond
